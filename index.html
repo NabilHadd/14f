@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Mi pagina de prueba</title>
-  </head>
-  <body>
-    <img src="images/firefox-icon.png" alt="Mi imagen de prueba">
-  </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros momentos a través de los ojos de Hubble</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nuestros momentos a través de los ojos de Hubble</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="image-card">
+                <img src="hubble1.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)">
+                <p>📅 14 de Febrero - Nuestra primera cita 🌌</p>
+            </div>
+            <div class="image-card">
+                <img src="hubble2.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)">
+                <p>📅 21 de Junio - El día que fuimos a la playa 🌊</p>
+            </div>
+            <div class="image-card">
+                <img src="hubble3.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)">
+                <p>📅 10 de Octubre - Noche de observación de estrellas ✨</p>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
 </html>
