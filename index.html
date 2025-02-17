@@ -13,41 +13,41 @@
     <main>
         <div class="gallery">
             <div class="image-card">
-                <img src="14f/05-10.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)">
+                <img src="14f/05-10.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)" data-description="hola1">
                 <p>📅 05 de Octubre - Tu cumpleaños 🎂</p>
             </div>
             <div class="image-card">
-                <img src="14f/27-12.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)">
+                <img src="14f/27-12.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)" data-description="hola2">
                 <p>📅 27 de Diciembre - El día que te dije me gustabas 💖</p>
             </div>
             <div class="image-card">
-                <img src="14f/13-01.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)">
+                <img src="14f/13-01.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)" data-description="hola3">
                 <p>📅 13 de Enero - Me diste el bloqueador 🧴</p>
             </div>
             <div class="image-card">
-                <img src="14f/17-01.png" alt="Imagen de Hubble" onclick="openLightbox(this)">
+                <img src="14f/17-01.png" alt="Imagen de Hubble" onclick="openLightbox(this)" data-description="hola4">
                 <p>📅 17 de Enero - Fuiste a darme un beso 😘</p>
             </div>
             <div class="image-card">
-                <img src="14f/20-01.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)">
+                <img src="14f/20-01.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)" data-description="hola5">
                 <p>📅 20 de Enero - Yo te di un beso waja 😆</p>
             </div>
             <div class="image-card">
-                <img src="14f/14-02.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)">
+                <img src="14f/14-02.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)" data-description="hola6">
                 <p>📅 14 de Febrero - Día de los enamorados 💕</p>
             </div>
             <div class="image-card">
-                <img src="14f/17-02.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)">
+                <img src="14f/17-02.jpg" alt="Imagen de Hubble" onclick="openLightbox(this)" data-description="hola7">
                 <p>📅 17 de Febrero - Hoy ✨</p>
             </div>
         </div>
     </main>
     
     <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
         <img id="lightbox-img" src="">
         <div id="lightbox-description"></div>  <!-- Contenedor de descripción -->
-        <div id="lightbox-long-description">Descripción adicional: Este es un espacio para agregar más detalles sobre la imagen, que puedes cambiar a tu gusto.</div> <!-- Descripción adicional -->
+        <div id="lightbox-long-description"></div> <!-- Descripción adicional -->
     </div>
     
     <script src="script.js"></script>
