@@ -51,7 +51,7 @@ header {
     display: none;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column; /* Cambié a column para poner los elementos verticalmente */
 }
 
 .lightbox img {
@@ -61,29 +61,27 @@ header {
 }
 
 #lightbox-description {
-    margin-left: 20px; 
+    margin-top: 20px;
     font-size: 1.5rem;
     color: white;
     font-family: 'Orbitron', 'Exo', 'Arial', 'Helvetica', sans-serif;
-    max-width: 30%;
+    max-width: 80%;
     line-height: 1.5;
     padding: 10px;
     background: rgba(0, 0, 0, 0.6); /* Fondo oscuro para la descripción */
     border-radius: 10px;
 }
 
-/* Descripción extendida */
 #lightbox-long-description {
-    margin-left: 20px; 
+    margin-top: 15px;
     font-size: 1.2rem;
     color: white;
     font-family: 'Orbitron', 'Exo', 'Arial', 'Helvetica', sans-serif;
-    max-width: 30%;
+    max-width: 80%;
     line-height: 1.5;
     padding: 10px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    margin-top: 15px;
 }
 
 /* Responsive adjustments */
