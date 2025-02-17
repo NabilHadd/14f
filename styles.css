@@ -51,40 +51,27 @@ header {
     display: none;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Cambié a column para poner los elementos verticalmente */
+    flex-direction: column; /* Ajustado a columna */
 }
 
 .lightbox img {
-    max-width: 60%;  
-    max-height: 90%;
+    max-width: 50%;  /* Reducido el tamaño máximo de la imagen al 50% */
+    max-height: 70%; /* Asegura que no ocupe toda la pantalla */
     border-radius: 10px;
 }
 
-#lightbox-description {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    color: white;
-    font-family: 'Orbitron', 'Exo', 'Arial', 'Helvetica', sans-serif;
-    max-width: 80%;
-    line-height: 1.5;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro para la descripción */
-    border-radius: 10px;
-}
-
+#lightbox-description,
 #lightbox-long-description {
-    margin-top: 15px;
-    font-size: 1.2rem;
-    color: white;
-    font-family: 'Orbitron', 'Exo', 'Arial', 'Helvetica', sans-serif;
+    margin-top: 20px;
+    font-size: 1.2rem; /* Ajustado el tamaño del texto */
     max-width: 80%;
     line-height: 1.5;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    text-align: center; /* Centrado de las descripciones */
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .lightbox {
         flex-direction: column; 
@@ -94,7 +81,7 @@ header {
         max-width: 90%; 
     }
 
-    #lightbox-description, #lightbox-long-description {
+    #lightbox-description {
         margin-left: 0;
         margin-top: 20px;
         max-width: 90%;
