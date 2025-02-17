@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Mifuente',sans-serif;
+    font-family: 'MiFuente', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -55,10 +55,18 @@ header {
     display: none;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .lightbox img {
     max-width: 90%;
     max-height: 90%;
     border-radius: 10px;
+}
+
+#lightbox-description {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'MiFuente', sans-serif;
 }
