@@ -51,19 +51,19 @@ header {
     display: none;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Ajustado a columna */
+    flex-direction: column;
 }
 
 .lightbox img {
-    max-width: 50%;  /* Reducido el tamaño máximo de la imagen al 50% */
-    max-height: 70%; /* Asegura que no ocupe toda la pantalla */
+    max-width: 40%;  /* Reducido aún más al 40% */
+    max-height: 60%; /* Asegura que no ocupe toda la pantalla */
     border-radius: 10px;
 }
 
 #lightbox-description,
 #lightbox-long-description {
     margin-top: 20px;
-    font-size: 1.2rem; /* Ajustado el tamaño del texto */
+    font-size: 1rem; /* Reducido el tamaño del texto */
     max-width: 80%;
     line-height: 1.5;
     padding: 10px;
@@ -78,7 +78,7 @@ header {
     }
 
     .lightbox img {
-        max-width: 90%; 
+        max-width: 80%;  /* Para pantallas más pequeñas, que ocupe más espacio */
     }
 
     #lightbox-description {
