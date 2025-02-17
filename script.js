@@ -7,12 +7,12 @@ function openLightbox(imgElement) {
     // Asignamos la imagen
     lightboxImg.src = imgElement.src;
     
-    // Asignamos la descripción
+    // Asignamos la descripción corta (lo que está en el <p> de cada imagen)
     lightboxDescription.textContent = imgElement.nextElementSibling.textContent;
     
-    // Agregar una descripción larga específica a cada imagen si lo deseas
-    lightboxLongDescription.textContent = "Descripción adicional: Esta es una descripción genérica. Cambia este texto por uno más personalizado para cada imagen.";
-
+    // Asignamos la descripción larga desde el atributo data-description
+    lightboxLongDescription.textContent = imgElement.getAttribute('data-description');
+    
     // Mostramos el lightbox
     lightbox.style.display = 'flex';
 }
