@@ -67,8 +67,12 @@ header {
     font-family: 'Orbitron', 'Exo', 'Arial', 'Helvetica', sans-serif;
     max-width: 30%;
     line-height: 1.5;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro para la descripción */
+    border-radius: 10px;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .lightbox {
         flex-direction: column; 
